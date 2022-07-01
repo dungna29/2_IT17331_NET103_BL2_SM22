@@ -17,6 +17,43 @@ namespace BAI_1_1_TongQuanWindowForm
             InitializeComponent();
             lblHienThi.Text = "Chào mừng các bạn";
             LoadNamSinh();
+            LoadDataGridPhim();
+        }
+
+        void LoadDataGridPhim()
+        {
+            Phim phim = new Phim();
+            //Cách 1:
+            //dgrid_Phim.DataSource = phim.GetLstPhim();
+
+            //Cách 2: Datatable
+            DataTable dt = new DataTable();
+            //Tạo cột
+            dt.Columns.Add("STT", typeof(int));
+            dt.Columns.Add("Tên phim", typeof(string));
+            dt.Columns.Add("Thể loại", typeof(string));
+            dt.Columns.Add("Trạng thái", typeof(string));
+            int stt = 1;
+            //Fill data vào row
+            foreach (var x in phim.GetLstPhim())
+            {
+                dt.Rows.Add(stt++, x.Ten, x.TheLoaiPhim, (x.TrangThai == 1 ? "Hoạt động" : "Dừng hoạt động"));
+            }
+            //Đổ DataTable vào Datagridview
+            //dgrid_Phim.DataSource = dt;
+
+            //Cách 3: Làm việc trực tiếp với datagridview
+            dgrid_Phim.ColumnCount = 4;//Định nghĩa số lượng cột
+            dgrid_Phim.Columns[0].Name = "STT";
+            dgrid_Phim.Columns[1].Name = "Tên";
+            dgrid_Phim.Columns[2].Name = "Thể Loại";
+            dgrid_Phim.Columns[3].Name = "Status";
+            //Fill data
+            stt = 1;
+            foreach (var x in phim.GetLstPhim())
+            {
+                dgrid_Phim.Rows.Add(stt++, x.Ten, x.TheLoaiPhim, (x.TrangThai == 1 ? "Hoạt động" : "Dừng hoạt động"));
+            }
         }
 
         void LoadNamSinh()
