@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BAI_1_2_CRUD_OBJ._1.PL
+namespace BAI_1_2_CRUD_OBJ.Views
 {
-    public partial class FrmQuanLyCuaHang : Form
+    public partial class FrmQLCuaHang : Form
     {
-        public FrmQuanLyCuaHang()
+        public FrmQLCuaHang()
         {
             InitializeComponent();
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAI_1_2_CRUD_OBJ._3.DAL.DomainClass
+namespace BAI_1_2_CRUD_OBJ.Models
 {
-    internal class CuaHang
+    public class CuaHang
     {
         public Guid Id { get; set; }
         public string Ma { get; set; }
@@ -14,5 +14,6 @@ namespace BAI_1_2_CRUD_OBJ._3.DAL.DomainClass
         public string DiaChi { get; set; }
         public string ThanhPho { get; set; }
         public string QuocGia { get; set; }
+        public int Status { get; set; }//1 Hoạt động - 0 Không hoạt động - 2 Đang sửa chữa
     }
 }
