@@ -117,6 +117,7 @@
             this.btn_Xoa.TabIndex = 2;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Sua
             // 
@@ -128,6 +129,7 @@
             this.btn_Sua.TabIndex = 1;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Them
             // 
@@ -139,6 +141,7 @@
             this.btn_Them.TabIndex = 0;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // groupBox3
             // 
@@ -161,6 +164,7 @@
             this.dgrid_CuaHangs.Name = "dgrid_CuaHangs";
             this.dgrid_CuaHangs.Size = new System.Drawing.Size(734, 239);
             this.dgrid_CuaHangs.TabIndex = 0;
+            this.dgrid_CuaHangs.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrid_CuaHangs_CellClick);
             // 
             // label1
             // 
@@ -187,6 +191,8 @@
             this.txt_Ten.Name = "txt_Ten";
             this.txt_Ten.Size = new System.Drawing.Size(199, 31);
             this.txt_Ten.TabIndex = 3;
+            this.txt_Ten.TextChanged += new System.EventHandler(this.txt_Ten_TextChanged);
+            this.txt_Ten.Leave += new System.EventHandler(this.txt_Ten_Leave);
             // 
             // label2
             // 
@@ -307,6 +313,9 @@
             this.txt_TimKiem.Size = new System.Drawing.Size(199, 31);
             this.txt_TimKiem.TabIndex = 15;
             this.txt_TimKiem.Text = "Tìm kiếm.........";
+            this.txt_TimKiem.Click += new System.EventHandler(this.txt_TimKiem_Click);
+            this.txt_TimKiem.TextChanged += new System.EventHandler(this.txt_TimKiem_TextChanged);
+            this.txt_TimKiem.Leave += new System.EventHandler(this.txt_TimKiem_Leave);
             // 
             // FrmQLCuaHang
             // 
