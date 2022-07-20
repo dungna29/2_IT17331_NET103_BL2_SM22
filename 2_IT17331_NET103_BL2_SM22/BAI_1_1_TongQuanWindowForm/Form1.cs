@@ -20,7 +20,7 @@ namespace BAI_1_1_TongQuanWindowForm
             LoadDataGridPhim();
         }
 
-        void LoadDataGridPhim()
+        private void LoadDataGridPhim()
         {
             Phim phim = new Phim();
             //Cách 1:
@@ -56,10 +56,10 @@ namespace BAI_1_1_TongQuanWindowForm
             }
         }
 
-        void LoadNamSinh()
+        private void LoadNamSinh()
         {
             int temp = 1600;
-            for (int i = 0; i < 2023-1600; i++)
+            for (int i = 0; i < 2023 - 1600; i++)
             {
                 cbx_NamSinh.Items.Add(temp);
                 temp++;
@@ -88,6 +88,7 @@ namespace BAI_1_1_TongQuanWindowForm
     }
 
     #region Cách đặt tên các control
+
     /*
      *Assembly                                asm
 Boolean                                 bln
@@ -144,6 +145,5 @@ UserControl                             usr
 WindowsPrincipal                        wpl
      */
 
-
-    #endregion
+    #endregion Cách đặt tên các control
 }
