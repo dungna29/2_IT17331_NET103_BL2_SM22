@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_1_TongQuanWindowForm"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_2_CRUD_OBJ", "BAI_1_2_CRUD_OBJ\BAI_1_2_CRUD_OBJ.csproj", "{70256EF6-D60C-49F6-87E2-30CEFB41D5DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1_3_ADO", "BAI_1_3_ADO\BAI_1_3_ADO.csproj", "{A5C69D76-0604-4431-A3AB-87E8ED3DCBFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{70256EF6-D60C-49F6-87E2-30CEFB41D5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70256EF6-D60C-49F6-87E2-30CEFB41D5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70256EF6-D60C-49F6-87E2-30CEFB41D5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C69D76-0604-4431-A3AB-87E8ED3DCBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C69D76-0604-4431-A3AB-87E8ED3DCBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C69D76-0604-4431-A3AB-87E8ED3DCBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C69D76-0604-4431-A3AB-87E8ED3DCBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
